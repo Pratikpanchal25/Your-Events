@@ -1,0 +1,63 @@
+.Main-events {
+  margin-top: 3rem;
+  color: white;
+}
+.Event {
+  margin-left: 2rem;
+  width: 20rem;
+  /* background: black; */
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  border-radius:10px;
+  box-shadow: 0 0 3px black;
+  
+}
+.Main-event-img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 10px;
+  margin-top: 0.2rem;
+  border: solid 1px white;
+  box-shadow: 0 0 3px black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Main-event-img:hover{
+  transform: scale(1.1);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.date{
+  margin-left: 10px
+}
+.day{
+  font-size: 2rem;
+}
+.month{
+  font-size: 1.5rem;
+}
+.Main-name{
+  font-size: 20px
+}
+.Address{
+  margin-top: 5px;
+}
+.price{
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 550px){
+  .details{
+    color: white;
+  }
+}
