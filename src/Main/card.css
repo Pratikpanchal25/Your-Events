@@ -1,0 +1,44 @@
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.line-1 {
+  font-size: 2rem;
+  font-family: "Almarai", sans-serif;
+  color: black;
+  font-style: italic;
+  margin-left: 2rem;
+}
+.card-image {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 5px;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card-image:hover {
+  transform: scale(1.07);
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 15rem;
+  margin-top: 20px;
+  margin-left: 2rem;
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .part-2{
+    margin-bottom: 2rem;
+  }
+}
