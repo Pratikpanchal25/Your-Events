@@ -1,16 +1,21 @@
 import React from 'react'
 import Card from './Card'
-import ComedyData from "./ComedyData" 
+
 import Main_card from './Main_card'
 import "./Main-page.css";
+import Data from './Data';
 
 export default function Comedy() {
+
+  const comedyArray = Data.filter((data)=>{
+    return data.id === "Comedy"
+  })
   return (
 <>  
     <div className="heading-part-2">Your Events For Comedy</div>
     <div className=' part-3' >
       
-         {ComedyData.map((data) => (
+         {comedyArray.map((data) => (
             <Main_card
               Main_card_image={data.Main_card_image}
               Date_Main={data.Date_Main}

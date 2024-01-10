@@ -1,16 +1,21 @@
 import React from 'react'
 import Card from './Card'
-import BusinessData from "./BusinessData" 
+
 import Main_card from './Main_card'
 import "./Main-page.css";
+import Data from './Data';
 
 export default function Business() {
+
+  const businessArray = Data.filter((data)=>{
+    return data.id === "Business"
+  })
   return (
 <>  
     <div className="heading-part-2">Your Events For Busines</div>
     <div className=' part-3' >
       
-         {BusinessData.map((data) => (
+         {businessArray.map((data) => (
             <Main_card
               Main_card_image={data.Main_card_image}
               Date_Main={data.Date_Main}
